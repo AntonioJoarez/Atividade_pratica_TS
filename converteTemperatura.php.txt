@@ -1,0 +1,19 @@
+<?php
+
+class ConversorTemperatura {
+    private $celsius;
+
+    public function __construct($celsius) {
+        $this->celsius = $celsius;
+    }
+
+    public function celsiusParaFahrenheit() {
+        return ($this->celsius * 9/5) + 32;
+    }
+
+    public function getCelsius() {
+        return $this->celsius;
+    }
+}
+
+?>

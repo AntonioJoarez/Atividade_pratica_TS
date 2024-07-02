@@ -1,0 +1,23 @@
+<?php
+
+class Fibonacci {
+    private $n;
+
+    public function __construct($n) {
+        $this->n = $n;
+    }
+
+    public function gerarFibonacci() {
+        $fib = [0, 1];
+        while (count($fib) < $this->n) {
+            $fib[] = $fib[count($fib) - 1] + $fib[count($fib) - 2];
+        }
+        return $fib; 
+    }
+
+    public function getN() {
+        return $this->n;
+    }
+}
+
+?>

@@ -1,0 +1,19 @@
+<?php
+
+class ManipuladorString {
+    private $texto;
+
+    public function __construct($texto) {
+        $this->texto = $texto;
+    }
+
+    public function inverter() {
+        return strrev($this->texto);
+    }
+
+    public function getTexto() {
+        return $this->texto;
+    }
+}
+
+?>
